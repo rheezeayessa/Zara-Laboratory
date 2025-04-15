@@ -23,17 +23,21 @@ public class Person {
     
     public class SchoolTest {
         public static void main(String[] args) {
-            System.out.print("--Person Information--\n");
-            Person person = new Person("Azi Doe", 12345);
-            person.displayInfo();
            
-            System.out.print("--Student Information--\n");
+            System.out.print("--Student Information--");
             Student student = new Student ("Riz Ayessa A. Zara", 2024, "1st Year");
             student.displayInfo();
+            System.out.println("");
 
-            System.out.print("--Staff Information--\n");
+            System.out.print("--Student Information--");
+            Teacher teacher = new Teacher ("Pablito Aguirre", 2024, "Computer Science");
+            teacher.displayInfo();
+            System.out.println("");
+
+            System.out.print("--Staff Information--");
             Staff staff = new Staff ("Jean Margatet", 2023, "HR Department");
             staff.displayInfo();
+            System.out.println("");
 
         }
     }
